@@ -118,6 +118,10 @@ body {
   border-bottom: 2px solid white;
 }
 
+.current {
+  border-bottom: 2px solid white;
+}
+
 /* FOOTER */
 .main-footer {
   color: rgb(0, 0, 0);

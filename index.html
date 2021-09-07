@@ -11,7 +11,7 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="quiz.css" />
+    <link rel="stylesheet" href="./styles/quiz.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -20,10 +20,16 @@
       </div>
       <div class="options">
         <ul>
-          <li class="option"><a href="">Quiz</a></li>
-          <li class="option"><a href="">Check Triangle</a></li>
-          <li class="option"><a href="">Caluculate Hypotenuse</a></li>
-          <li class="option"><a href="">Caluculate Area</a></li>
+          <li class="option"><a class="current" href="/">Quiz</a></li>
+          <li class="option">
+            <a href="./html/check-triangle.html">Check Triangle</a>
+          </li>
+          <li class="option">
+            <a href="./html/calculate-hypotenuse.html">Caluculate Hypotenuse</a>
+          </li>
+          <li class="option">
+            <a href="./html/calculate-area.html">Caluculate Area</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -202,6 +208,6 @@
       </div>
     </footer>
 
-    <script src="./quiz.js"></script>
+    <script src="./scripts/quiz.js"></script>
   </body>
 </html>

@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&family=Spartan:wght@100;400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: coral;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+}
+
+/* NAVIGATON BAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--primary-color);
+  height: 4rem;
+  color: white;
+}
+
+.navbar .main-title {
+  font-family: "Rock Salt", cursive;
+  font-size: 1.5rem;
+  margin: 30px;
+}
+
+.navbar .main-title a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .options ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.navbar .options ul li {
+  padding: 0 20px;
+}
+.navbar .options ul li a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.navbar .options ul li a:hover {
+  border-bottom: 2px solid white;
+}
+
+.current {
+  border-bottom: 2px solid white;
+}
+
+/* FOOTER */
+.main-footer {
+  color: rgb(0, 0, 0);
+  /* width: 100%; */
+  /* border-top: 1px solid black; */
+  margin-top: 5rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text {
+  font-size: 20px;
+  margin-right: 40px;
+}
+
+.social .fab {
+  border-radius: 50%;
+  color: rgb(10, 10, 10);
+  /* color: var(--primary-color); */
+  text-align: center;
+  padding: 0.5rem;
+}
+.social .fab:hover {
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
