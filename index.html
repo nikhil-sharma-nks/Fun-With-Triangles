@@ -5,10 +5,201 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=\, initial-scale=1.0" />
     <title>QUIZ | Fun With Triangles</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="quiz.css" />
   </head>
   <body>
-    <h1>working</h1>
-    <style src="./quiz.js"></style>
+    <nav class="navbar">
+      <div class="main=title">Fun With Triangles</div>
+      <div class="options">
+        <ul>
+          <li class="option"><a href="">Quiz</a></li>
+          <li class="option"><a href="">Check Triangle</a></li>
+          <li class="option"><a href="">Caluculate Hypotenuse</a></li>
+          <li class="option"><a href="">Caluculate Area</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="page-heading">Quiz On Triangles</div>
+      <div class="description">
+        For each correct answer you will get 1 point
+      </div>
+      <form class="quiz-form">
+        <div class="question-container">
+          <p>
+            Q-1> What is the third angle for the triangle where angle1 = 45° and
+            angle2 = 45°?
+          </p>
+          <label><input type="radio" name="question1" value="45°" />45°</label>
+          <label><input type="radio" name="question1" value="90°" />90°</label>
+          <label><input type="radio" name="question1" value="60°" />60°</label>
+        </div>
+        <div class="question-container">
+          <p>
+            Q-2> What is the third angle for the triangle where angle1 = 45° and
+            angle2 = 45°?
+          </p>
+          <label>
+            <input type="radio" name="question2" value="obtuse" />obtuse
+          </label>
+          <label
+            ><input type="radio" name="question2" value="acute" />acute</label
+          >
+          <label
+            ><input type="radio" name="question2" value="right angled" />right
+            angled</label
+          >
+        </div>
+        <div class="question-container">
+          <p>Q-3> A triangle can have</p>
+          <label>
+            <input type="radio" name="question3" value="one right angle" />
+            one right angle
+          </label>
+          <label
+            ><input type="radio" name="question3" value="two right angles" />two
+            right angles</label
+          >
+        </div>
+        <div class="question-container">
+          <p>Q-4> Which of the following can form a right angled triangle?</p>
+          <label>
+            <input type="radio" name="question4" value="14, 15, 26" />
+            14, 15, 26
+          </label>
+          <label>
+            <input type="radio" name="question4" value="12, 16, 20" />
+            12, 16, 20</label
+          >
+        </div>
+        <div class="question-container">
+          <p>Q-5> Which of the following triangles are always similar?</p>
+          <label>
+            <input type="radio" name="question5" value="Equilateral triangle" />
+            Equilateral triangle
+          </label>
+          <label>
+            <input type="radio" name="question5" value="Isosceles triangle" />
+            Isosceles triangle</label
+          >
+        </div>
+        <div class="question-container">
+          <p>
+            Q-6> If one angle of a triangle is obtuse, then which one of the
+            following is the possible measure of remaining angles?
+          </p>
+          <label>
+            <input type="radio" name="question6" value="100°" />
+            100°
+          </label>
+          <label>
+            <input type="radio" name="question6" value="85°" />
+            85°</label
+          >
+        </div>
+
+        <div class="question-container">
+          <p>
+            Q-7> If the largest angle in a triangle is 70°, what is the least
+            possible value of the smallest angle of the triangle?
+          </p>
+          <label>
+            <input type="radio" name="question7" value="30°" />
+            30°
+          </label>
+          <label>
+            <input type="radio" name="question7" value="10°" />
+            10°
+          </label>
+        </div>
+
+        <div class="question-container">
+          <p>Q-8> The perimeter of scalene triangle with sides a, b, c is</p>
+          <label>
+            <input type="radio" name="question8" value="a + b + c" />
+            a + b + c
+          </label>
+          <label>
+            <input type="radio" name="question8" value="2a" />
+            2a
+          </label>
+          <label>
+            <input type="radio" name="question8" value="None of these" />
+            None of these
+          </label>
+        </div>
+
+        <div class="question-container">
+          <p>Q-9> A scalene triangle has ___ lines of symmetry</p>
+          <label>
+            <input type="radio" name="question9" value="two" />two
+          </label>
+          <label>
+            <input type="radio" name="question9" value="no" />
+            no
+          </label>
+          <label>
+            <input type="radio" name="question9" value="15" />
+            15
+          </label>
+        </div>
+
+        <div class="question-container">
+          <p>
+            Q-10> There is a right triangle PQR where: angle Q = 90°; angle P =
+            angle R. What is the measure of angles P and R?
+          </p>
+          <label>
+            <input type="radio" name="question10" value="85°" />
+            85°
+          </label>
+          <label>
+            <input type="radio" name="question10" value="65°" />
+            65°
+          </label>
+          <label>
+            <input type="radio" name="question10" value="45°" />
+            45°
+          </label>
+        </div>
+      </form>
+      <button class="btn-check" id="submit-answers-btn">Submit Answers</button>
+      <div class="result"></div>
+    </div>
+
+    <footer class="main-footer">
+      <div class="footer-content">
+        <p class="footer-text">Made with ❤ by Nikhil <br /></p>
+
+        <div class="social">
+          <a
+            href="https://www.linkedin.com/in/nikhil-sharma-nks/"
+            target="_blank"
+            ><i class="fab fa-linkedin fa-3x"></i
+          ></a>
+          <a href="https://github.com/nikhil-sharma-nks" target="_blank"
+            ><i class="fab fa-github fa-3x"></i
+          ></a>
+          <a href="https://twitter.com/wannabe_nikhil" target="_blank"
+            ><i class="fab fa-twitter fa-3x"></i
+          ></a>
+          <a href="https://www.facebook.com/nikhilshawarma/" target="_blank">
+            <i class="fab fa-facebook fa-3x"></i
+          ></a>
+          <a href="https://www.instagram.com/nikhil.shawarma/" target="_blank"
+            ><i class="fab fa-instagram fa-3x"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./quiz.js"></script>
   </body>
 </html>
