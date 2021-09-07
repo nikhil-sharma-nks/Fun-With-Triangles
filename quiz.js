@@ -29,5 +29,5 @@ sumbitBtn.addEventListener("click", function sumbitOnClickHandler() {
     index++;
   }
   // console.log("The score is "+score);
-  result.innerText = "The score is " + score;
+  result.innerText = `Your Score is ${score}/10`;
 });

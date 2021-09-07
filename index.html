@@ -15,7 +15,9 @@
   </head>
   <body>
     <nav class="navbar">
-      <div class="main=title">Fun With Triangles</div>
+      <div class="main-title">
+        <a href="/" class="main-title">Quiz On Triangles</a>
+      </div>
       <div class="options">
         <ul>
           <li class="option"><a href="">Quiz</a></li>
@@ -37,9 +39,9 @@
             Q-1> What is the third angle for the triangle where angle1 = 45° and
             angle2 = 45°?
           </p>
-          <label><input type="radio" name="question1" value="45°" />45°</label>
-          <label><input type="radio" name="question1" value="90°" />90°</label>
-          <label><input type="radio" name="question1" value="60°" />60°</label>
+          <label><input type="radio" name="question1" value="45°" /> 45°</label>
+          <label><input type="radio" name="question1" value="90°" /> 90°</label>
+          <label><input type="radio" name="question1" value="60°" /> 60°</label>
         </div>
         <div class="question-container">
           <p>
@@ -47,13 +49,13 @@
             angle2 = 45°?
           </p>
           <label>
-            <input type="radio" name="question2" value="obtuse" />obtuse
+            <input type="radio" name="question2" value="obtuse" /> obtuse
           </label>
           <label
-            ><input type="radio" name="question2" value="acute" />acute</label
+            ><input type="radio" name="question2" value="acute" /> acute</label
           >
           <label
-            ><input type="radio" name="question2" value="right angled" />right
+            ><input type="radio" name="question2" value="right angled" /> right
             angled</label
           >
         </div>
@@ -64,8 +66,8 @@
             one right angle
           </label>
           <label
-            ><input type="radio" name="question3" value="two right angles" />two
-            right angles</label
+            ><input type="radio" name="question3" value="two right angles" />
+            two right angles</label
           >
         </div>
         <div class="question-container">
@@ -170,7 +172,7 @@
           </label>
         </div>
       </form>
-      <button class="btn-check" id="submit-answers-btn">Submit Answers</button>
+      <button class="btn-submit" id="submit-answers-btn">Submit Answers</button>
       <div class="result"></div>
     </div>
 
