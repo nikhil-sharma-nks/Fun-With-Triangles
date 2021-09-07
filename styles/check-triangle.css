@@ -1,5 +1,8 @@
 @import url(utilities.css);
 
+/* :root {
+  --primary-color: lightblue;
+} */
 .angle-input-container {
   display: flex;
   flex-direction: column;
@@ -8,7 +11,7 @@
 .angle-input {
   padding: 20px;
   border: 1px solid var(--primary-color);
-  margin: 10px auto;
+  margin: 10px auto 30px;
   border-radius: 10px;
   text-align: center;
   width: 50%;
@@ -17,4 +20,5 @@
 .angle-input-container label {
   font-weight: bold;
   text-align: center;
+  color: var(--primary-color);
 }
