@@ -131,3 +131,87 @@ body {
   background-color: var(--primary-color);
   cursor: pointer;
 }
+
+@media (max-width: 540px) {
+  .container {
+    width: 100%;
+    margin: 30px auto;
+  }
+
+  .container .page-heading {
+    font-size: 1.4rem;
+  }
+
+  .container .description {
+    font-size: 1.2rem;
+  }
+
+  .btn-submit {
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px auto;
+    display: flex;
+    background: var(--primary-color);
+    border: none;
+    cursor: pointer;
+  }
+  .btn-submit:hover {
+    box-shadow: 0 0 20px var(--primary-color);
+  }
+
+  .result {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .error {
+    color: red;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color);
+    height: 100%;
+    color: white;
+  }
+
+  .navbar .main-title {
+    font-family: "Rock Salt", cursive;
+    font-size: 1.4rem;
+    margin: 20px auto;
+  }
+
+  .navbar .options ul li {
+    text-align: center;
+    padding: 0 4px;
+    margin-bottom: 10px;
+  }
+  .navbar .options ul li a {
+    color: white;
+    text-decoration: none;
+    transition: none;
+  }
+
+  .current {
+    border-bottom: 2px solid white;
+  }
+
+  /* FOOTER */
+  .main-footer {
+    margin-top: 5rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-text {
+    font-size: 20px;
+    margin-right: 0;
+  }
+}

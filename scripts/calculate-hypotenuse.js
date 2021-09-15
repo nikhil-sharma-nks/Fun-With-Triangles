@@ -13,13 +13,18 @@ submitBtn.addEventListener("click", function submitBtnClick() {
   errorMsg.style.display = "none";
 
   if (baseSide && height) {
-    let sumOfSquare = baseSide * baseSide + height * height;
+    if (baseSide > 0 && height > 0) {
+      let sumOfSquare = baseSide * baseSide + height * height;
 
-    const hypotenuse = Math.sqrt(sumOfSquare).toFixed(2);
+      const hypotenuse = Math.sqrt(sumOfSquare).toFixed(2);
 
-    resultMsg.style.display = "block";
-    resultMsg.style.color = "green";
-    resultMsg.innerText = `Hypotenuse Of Triangles with base side ${baseSide} and height ${height} is ${hypotenuse}`;
+      resultMsg.style.display = "block";
+      resultMsg.style.color = "green";
+      resultMsg.innerText = `Hypotenuse Of Triangles with base side ${baseSide} and height ${height} is ${hypotenuse}`;
+    } else {
+      errorMsg.style.display = "block";
+      errorMsg.innerText = "ERROR: Please Enter Positive Angle";
+    }
   } else {
     errorMsg.style.display = "block";
     errorMsg.innerText = "ERROR: Please Enter All The Input";

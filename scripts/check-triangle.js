@@ -15,16 +15,21 @@ submitBtn.addEventListener("click", function submitBtnClick() {
   errorMsg.style.display = "none";
 
   if (angle1 && angle2 && angle3) {
-    let sum = angle1 + angle2 + angle3;
-    console.log(sum);
-    if (sum === 180) {
-      resultMsg.style.display = "block";
-      resultMsg.style.color = "green";
-      resultMsg.innerText = `${angle1}, ${angle2}, ${angle3} Does Make A Triangle!`;
+    if (angle1 > 0 && angle2 > 0 && angle3 > 0) {
+      let sum = angle1 + angle2 + angle3;
+      console.log(sum);
+      if (sum === 180) {
+        resultMsg.style.display = "block";
+        resultMsg.style.color = "green";
+        resultMsg.innerText = `${angle1}, ${angle2}, ${angle3} Does Make A Triangle!`;
+      } else {
+        resultMsg.style.display = "block";
+        resultMsg.style.color = "red";
+        resultMsg.innerText = `${angle1}, ${angle2}, ${angle3} Does NOT Make A Triangle!`;
+      }
     } else {
-      resultMsg.style.display = "block";
-      resultMsg.style.color = "red";
-      resultMsg.innerText = `${angle1}, ${angle2}, ${angle3} Does NOT Make A Triangle!`;
+      errorMsg.style.display = "block";
+      errorMsg.innerText = "ERROR: Please Enter Positive Angle Only";
     }
   } else {
     errorMsg.style.display = "block";

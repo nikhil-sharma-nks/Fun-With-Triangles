@@ -15,29 +15,34 @@ submitBtn.addEventListener("click", function submitBtnClick() {
   errorMsg.style.display = "none";
 
   if (side1 && side2 && side3) {
-    if (
-      side1 + side2 > side3 &&
-      side2 + side3 > side1 &&
-      side1 + side3 > side2
-    ) {
-      const semiPerimeter = (side1 + side2 + side3) / 2;
+    if (side1 > 0 && side2 > 0 && side3 > 0) {
+      if (
+        side1 + side2 > side3 &&
+        side2 + side3 > side1 &&
+        side1 + side3 > side2
+      ) {
+        const semiPerimeter = (side1 + side2 + side3) / 2;
 
-      const area = Math.sqrt(
-        semiPerimeter *
-          (semiPerimeter - side1) *
-          (semiPerimeter - side2) *
-          (semiPerimeter - side3)
-      ).toFixed(2);
+        const area = Math.sqrt(
+          semiPerimeter *
+            (semiPerimeter - side1) *
+            (semiPerimeter - side2) *
+            (semiPerimeter - side3)
+        ).toFixed(2);
 
-      resultMsg.style.display = "block";
-      resultMsg.style.color = "green";
-      resultMsg.innerText = `Area Of Triangles with sides ${side1}, ${side2}, ${side3}  is ${area}`;
+        resultMsg.style.display = "block";
+        resultMsg.style.color = "green";
+        resultMsg.innerText = `Area Of Triangles with sides ${side1}, ${side2}, ${side3}  is ${area}`;
 
-      errorMsg.innerText = "ERROR: Please Enter All The Input";
+        errorMsg.innerText = "ERROR: Please Enter All The Input";
+      } else {
+        errorMsg.style.display = "block";
+        errorMsg.innerText =
+          "ERROR: Enter valid side lengths such that sum of two sides is always greater than the third one";
+      }
     } else {
       errorMsg.style.display = "block";
-      errorMsg.innerText =
-        "ERROR: Enter valid side lengths such that sum of two sides is always greater than the third one";
+      errorMsg.innerText = "ERROR: Enter Positive Sides Only";
     }
   } else {
     errorMsg.style.display = "block";
